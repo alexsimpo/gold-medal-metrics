@@ -2,11 +2,14 @@
   "name": "agoldmedalmetric",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://alexsimpo.github.io/goldmedal/",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "webpack": "webpack",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
